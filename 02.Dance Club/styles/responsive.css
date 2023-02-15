@@ -1,1 +1,44 @@
-//TODO
+@media (max-width: 800px) {
+    body header {
+      
+    }
+    body header nav{
+        flex-direction: column;
+    }
+   nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .trainings{
+        flex-direction: column;
+    }
+    .trainings div{
+        width: 54%;
+    }
+    .instructors-pic{
+        flex-direction: column;
+    }
+    .classes li {
+        width:45%;
+    }
+    .classes ul{
+        gap:5px
+    }
+    .classes, .instructors{
+        padding: 3em 0;
+    }
+    .getInTouch{
+       display: block;
+    }
+    .site-footer .wrapper{
+     flex-wrap: wrap;
+    }
+    .site-footer .about{
+        flex:unset;
+    }
+    .map img{
+        position:  absolute;
+        bottom: 10px;
+    }
+ 
+}
