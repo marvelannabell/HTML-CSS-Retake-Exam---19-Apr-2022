@@ -1,0 +1,258 @@
+:root {
+    --clr-yellow: #c9a535;
+    --clr-gray: #868c9d;
+    --clr-text-grey: rgb(116, 116, 116);
+    --clr-btn-text: #f4a400;
+    --clr--blue: #5e6481;
+}
+
+html {
+    font-family: helvetica, sans-serif;
+    ;
+}
+
+/* header */
+header {
+    position: relative;
+}
+
+.logo {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    padding: 30px;
+    display: inline-block;
+    background: linear-gradient(0deg, rgba(151, 107, 12, 1) 1%, rgba(201, 165, 53, 1) 19%);
+    z-index: 10;
+}
+
+.login__elements,
+.others__elements {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.login__elements li,
+.others__elements li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 10px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+
+.login__elements li:hover,
+.others__elements li:hover {
+    background-color: var(--clr-yellow);
+}
+
+.login__elements li i,
+.others__elements li a {
+    color: var(--clr-gray);
+    font-size: 2rem;
+}
+
+.login__elements li,
+.others__elements li a {
+    color: var(--clr-text-grey);
+    font-size: 2rem;
+}
+
+.others__elements li a {
+    text-decoration: none;
+}
+
+.login,
+.others {
+    display: flex;
+    justify-content: end;
+}
+
+/* section three photoss */
+.three-photos {
+    position: relative;
+    height: 67vh;
+    overflow: hidden;
+}
+
+.three-photos img {
+
+    height: 123vh;
+    object-fit: cover;
+    position: absolute;
+    top: -300px;
+    z-index: -1;
+}
+
+.shuttle {
+    position: absolute;
+    top: 22vh;
+    left: 7vw;
+    width: 38vw;
+    height: 35vh;
+    padding: 50px 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.shuttle .text {
+    margin-top: 20px;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.shuttle .title {
+    color: white;
+    font-size: 2rem;
+}
+
+.btn{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+   
+}
+
+.shuttle .btn {
+    margin-top: 10px;
+    background-color: transparent;
+    color: var(--clr-btn-text);
+    padding: 10px 20px;
+    border: 3px solid white;
+    font-size: 1.5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.shuttle .btn:hover{
+    background-color: white;
+    color: var(--clr-btn-text);
+}
+
+/* card */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(151, 105, 11, 1) 0%, rgba(206, 170, 58, 1) 79%);
+    list-style-type: none;
+}
+
+.card ul i {
+    margin-right: 10px;
+}
+
+.card li {
+    text-align: start;
+    margin-top: 20px;
+    font-size: 1.5rem;
+
+
+}
+
+.card .title {
+    font-size: 2.5rem;
+}
+
+.card ul {
+    width: 50%;
+    list-style-type: none;
+}
+
+.card .btn {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.card .btn:hover {
+    background-color: white;
+    color: var(--clr-btn-text);
+}
+
+/* see-more round carsd */
+.see-more{
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.see-more .title{
+color: var(--clr--blue);
+text-align: center;
+font-size: 3rem;
+font-weight: 400;
+width: 65vw;
+}
+.see-more h3{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: var(--clr--blue);
+}
+.round-cards {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.round-cards img {
+    border: 2px solid var(--clr--blue);
+    padding: 3px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.round-cards li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* newsletter */
+.newsletter{
+    background-color: var(--clr-yellow);
+    padding: 20px 40px ;
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter .title{
+    color: white;
+}
+.newsletter .btn{
+    border: 3px solid white;
+background-color: transparent;
+color: white;
+padding: 10px 20px;
+font-weight: 600;
+}
+.newsletter .btn:hover{
+    background-color: white;
+    color: var(--clr-btn-text);
+}
+/* footer */
+
+footer{
+    padding: 20px 40px;
+}
+footer p{
+    color: var(--clr--blue);
+    text-align: center;
+}
